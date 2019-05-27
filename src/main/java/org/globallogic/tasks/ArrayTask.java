@@ -1,4 +1,4 @@
-package org.globallogic.utils;
+package org.globallogic.tasks;
 
 public class ArrayTask {
 

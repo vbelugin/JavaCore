@@ -1,4 +1,5 @@
-import org.globallogic.utils.Calcualtor;
+import org.globallogic.tasks.Calcualtor;
+import org.globallogic.tasks.Pyramid;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -9,5 +10,10 @@ public class Tests {
     @Test
     public void testPi() {
         assertThat(Calcualtor.calcPi(1000), is(3.14059));
+    }
+
+    @Test
+    public void testPyramid() {
+        Pyramid.printPyramid(7);
     }
 }

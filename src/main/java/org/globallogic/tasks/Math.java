@@ -1,4 +1,4 @@
-package org.globallogic.utils;
+package org.globallogic.tasks;
 
 public class Math {
     private static final double PI = 3.14;
@@ -27,7 +27,7 @@ public class Math {
         return PI*pow(radius, 2);
     }
 
-    public static int pow(int base, int power) {
+    private static int pow(int base, int power) {
         int result = base;
         for (int p = 0; p < power; p++) {
             result *= base;

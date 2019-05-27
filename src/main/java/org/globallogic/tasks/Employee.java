@@ -1,4 +1,4 @@
-package org.globallogic.utils;
+package org.globallogic.tasks;
 
 public class Employee {
     private static int numberOfEmployees = 0;
