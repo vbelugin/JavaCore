@@ -25,14 +25,12 @@ public class Pyramid {
 
     private static int getMaxSize(int height) {
         final int[] max = {1};
-        IntStream.range(0, height).forEach(i -> max[0] += 2);
+        IntStream.range(1, height).forEach(i -> max[0] += 2);
         return max[0];
     }
 
     private static void addSpaces(int lineSize, int maxSize) {
         int spaceCount = (maxSize - lineSize) / 2;
-        for (int i = 0; i < spaceCount; i++) {
-            System.out.print(" ");
-        }
+        IntStream.range(0, spaceCount).forEach(i -> System.out.print(" "));
     }
 }
