@@ -16,16 +16,8 @@ public class Monitor extends Device {
         return resolutionX;
     }
 
-    public void setResolutionX(int resolutionX) {
-        this.resolutionX = resolutionX;
-    }
-
     public int getResolutionY() {
         return resolutionY;
-    }
-
-    public void setResolutionY(int resolutionY) {
-        this.resolutionY = resolutionY;
     }
 
     @Override
@@ -47,9 +39,8 @@ public class Monitor extends Device {
 
     @Override
     public String toString() {
-        return super.toString() + "\nMonitor{" +
-                "resolutionX='" + resolutionX + '\'' +
-                ", resolutionY='" + resolutionY + '\'' +
-                '}';
+        return super.toString() +
+                ", resolutionX='" + resolutionX + '\'' +
+                ", resolutionY='" + resolutionY + '\'';
     }
 }

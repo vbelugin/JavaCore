@@ -47,8 +47,8 @@ public class EthernetAdapter extends Device{
 
     @Override
     public String toString() {
-        return super.toString() + "\nEthernetAdapter:" +
-                "speed=" + speed +
+        return super.toString() +
+                ", speed=" + speed +
                 ", mac='" + mac + '\'' +
                 '}';
     }

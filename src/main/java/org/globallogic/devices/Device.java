@@ -37,10 +37,9 @@ public class Device {
 
     @Override
     public String toString() {
-        return "Device{" +
-                "manufacturer='" + manufacturer + '\'' +
+        return getClass().getSimpleName() +
+                ": manufacturer='" + manufacturer + '\'' +
                 ", price=" + price +
-                ", serialNumber='" + serialNumber + '\'' +
-                '}';
+                ", serialNumber='" + serialNumber + '\'';
     }
 }
